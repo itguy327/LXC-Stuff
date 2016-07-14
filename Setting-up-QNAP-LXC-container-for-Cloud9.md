@@ -16,6 +16,16 @@
       2. Host: 3000, Container: 3000, Protocol: TCP (update host port to another port if its already used)
     2. Click Create
 
-### 2. Setup LXC environment
+### 2. Setup base environment
   1. Within LXC container: `apt-get update && apt-get -y upgrade`
   2. Install build tools: `apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev sshfs python2.7 python2.7-dev`
+
+### 3. Install latest Node.js 6.x
+   <https://nodejs.org/en/download/package-manager/>
+  1. run: `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
+  2. run: `apt-get install -y nodejs`
+
+### 4. Install Cloud9
+  1. run: `git clone https://github.com/c9/core.git /cloud9`
+  2. run: `cd /cloud9`
+  3. run: `scripts/install-sdk.sh`
