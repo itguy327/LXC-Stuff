@@ -24,7 +24,8 @@
    <https://nodejs.org/en/download/package-manager/>
   1. run: `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
   2. run: `apt-get install -y nodejs`
-  3. (Optional) Install NVM (Node Version Manager): `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash`
+  3. (Optional) Install NVM (Node Version Manager)
+    1. run: `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash`
 
 ### 4. Install Cloud9
   1. run: `git clone https://github.com/c9/core.git /cloud9`
