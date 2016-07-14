@@ -17,7 +17,7 @@
 ### 2. Setup base environment
   1. Within LXC container: `apt-get update && apt-get -y upgrade`
   2. Install build tools: `apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev sshfs python2.7 python2.7-dev`
-  3. (Optional) Update container time zone for correct file timestamp with GIT (QNAP timezone by default is Taiwan)
+  3. (Optional) Update container time zone for correct file timestamp with Git (QNAP timezone by default is Taiwan)
     1. run: `dpkg-reconfigure tzdata`
 
 ### 3. Install latest Node.js 6.x
@@ -38,7 +38,7 @@
   2. run: `PATH="$C9_DIR/node/bin/:$C9_DIR/node_modules/.bin:$PATH"`
   3. run: `cd $C9_DIR`
   4. run: `npm install pty.js`
-  5. (Optional) make the path permanent for future Cloud 9 updates
+  5. (Optional) make the path permanent for future C9 updates
     1. modify .bashrc in /root directory and add the following lines
       1. `export C9_DIR=$HOME/.c9`
       2. `export PATH="$C9_DIR/node/bin/:$C9_DIR/node_modules/.bin:$PATH"`
