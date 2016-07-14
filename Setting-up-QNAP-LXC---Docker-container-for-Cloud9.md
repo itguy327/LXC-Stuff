@@ -2,7 +2,7 @@
 
 ## Thanks to [kdelfour](//github.com/kdelfour/cloud9-docker/) and [nightwing](//github.com/c9/core/issues/197#issuecomment-154320986) for figuring out how to setup Cloud9. This should work for any LXC container e.g. DigitalOcean
 
-### 1. Create QNAP LXC Container
+### 1. Create QNAP LXC Container (should also work for QNAP Ubuntu Docker container)
    Install Container Station from QNAP App Center (if not already installed)
   1. Open Container Station
   2. Click on Create Container
@@ -29,3 +29,4 @@
   1. run: `git clone https://github.com/c9/core.git /cloud9`
   2. run: `cd /cloud9`
   3. run: `scripts/install-sdk.sh`
+  4. go get some coffee
