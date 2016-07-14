@@ -30,3 +30,22 @@
   2. run: `cd /cloud9`
   3. run: `scripts/install-sdk.sh`
   4. go get some coffee
+
+### 5. Fix PTY
+  1. run: `C9_DIR=$HOME/.c9`
+  2. run: `PATH="$C9_DIR/node/bin/:$C9_DIR/node_modules/.bin:$PATH"`
+  3. run: `cd $C9_DIR`
+  4. run: `npm install pty.js`
+
+### 6. Tweak standlone.js conf
+  1. run: `sed -i -e 's_127.0.0.1_0.0.0.0_g' /cloud9/configs/standalone.js`
+
+### 7. Add workspace
+  1. run: `mkdir /workspace`
+
+### 8. (Optional) Clean up APT
+  1. run: `apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*`
+
+### 9. Run Cloud9
+  1. (Option 1) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /workspace`
+  2. (Option 2 [see all directories in C9]) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /`
