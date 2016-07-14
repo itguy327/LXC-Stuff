@@ -38,6 +38,10 @@
   2. run: `PATH="$C9_DIR/node/bin/:$C9_DIR/node_modules/.bin:$PATH"`
   3. run: `cd $C9_DIR`
   4. run: `npm install pty.js`
+  5. (Optional) make the path permanent for future Cloud 9 updates
+    1. modify .bashrc in /root directory and add the following lines
+      1. `export C9_DIR=$HOME/.c9`
+      2. `export PATH="$C9_DIR/node/bin/:$C9_DIR/node_modules/.bin:$PATH"`
 
 ### 6. Tweak standlone.js conf
   1. run: `sed -i -e 's_127.0.0.1_0.0.0.0_g' /cloud9/configs/standalone.js`
