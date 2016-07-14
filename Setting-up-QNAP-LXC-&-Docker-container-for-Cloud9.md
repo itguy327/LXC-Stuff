@@ -47,3 +47,6 @@
 ### 9. Run Cloud9
   1. (Option 1) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /workspace`
   2. (Option 2: see all directories in C9) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /`
+
+### 10. (Optional) Update container time zone for correct file timestamp with GIT (QNAP timezone by default is Taiwan)
+  1. run: `dpkg-reconfigure tzdata`
