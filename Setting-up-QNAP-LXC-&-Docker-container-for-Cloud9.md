@@ -17,6 +17,8 @@
 ### 2. Setup base environment
   1. Within LXC container: `apt-get update && apt-get -y upgrade`
   2. Install build tools: `apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev sshfs python2.7 python2.7-dev`
+  3. (Optional) Update container time zone for correct file timestamp with GIT (QNAP timezone by default is Taiwan)
+    1. run: `dpkg-reconfigure tzdata`
 
 ### 3. Install latest Node.js 6.x
    <https://nodejs.org/en/download/package-manager/>
@@ -47,6 +49,3 @@
 ### 9. Run Cloud9
   1. (Option 1) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /workspace`
   2. (Option 2: see all directories in C9) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /`
-
-### 10. (Optional) Update container time zone for correct file timestamp with GIT (QNAP timezone by default is Taiwan)
-  1. run: `dpkg-reconfigure tzdata`
