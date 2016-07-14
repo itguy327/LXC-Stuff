@@ -56,4 +56,4 @@
   1. (Option 1) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /workspace`
   2. (Option 2: see all directories in C9) run: `node /cloud9/server.js --listen 0.0.0.0 --port 80 -w /`
 
-### 10. Clone or Export Container as Backup
+### 10. Clone or Export Container as Backup Image
