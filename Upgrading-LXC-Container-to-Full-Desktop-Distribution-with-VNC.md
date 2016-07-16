@@ -6,7 +6,7 @@
   1. `apt-get install tasksel`
 3. Run tasksel
   1. Select [spacebar] Xubuntu Desktop, then [TAB] to Ok to start installation
-4. Install tightvncserver
+4. Install tightvncserver <https://forum.qnap.com/viewtopic.php?t=120564>
   1. `apt-get install tightvncserver`
   2. run `vncserver` and complete configuration
   3. run `netstat -plant` to see which port vncserver is using
