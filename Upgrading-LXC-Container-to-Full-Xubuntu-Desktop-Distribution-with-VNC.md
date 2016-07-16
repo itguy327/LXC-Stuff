@@ -14,4 +14,5 @@
 6. Restart container
 7. Remote in to your container
   1. run `vncserver`
-  2. use preferred VNC client to connect to forwarding port
+  2. (optional) run `vncserver -geometry 1280x780` for specific resolution
+  3. use preferred VNC client to connect to forwarding port
