@@ -6,3 +6,4 @@ Run the following commands as root
 1. `adduser demo`
 2. `gpasswd -a demo sudo`
 3. `su - demo`
+4. to list all users `cut -d: -f1 /etc/passwd`
