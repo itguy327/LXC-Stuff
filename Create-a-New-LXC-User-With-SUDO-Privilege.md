@@ -7,3 +7,4 @@ Run the following commands as root
 2. `gpasswd -a demo sudo`
 3. `su - demo`
 4. to list all users `cut -d: -f1 /etc/passwd`
+5. To change the password for a user `sudo passwd username`
